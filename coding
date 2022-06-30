@@ -1,0 +1,29 @@
+#include <iostream>
+
+int main()
+{
+	unsigned int counter = 0;
+	int sum = 0;
+	int grade = 0;
+	float average = 0;
+
+	printf_s("Enter grade, -1 to end: ");
+	scanf_s("%d", &grade);
+
+	while (grade != -1)
+	{
+		sum = sum + grade;
+		counter++;
+		printf_s("Enter grade, -1 to end: ");
+		scanf_s("%d", &grade);
+	}
+
+	if (counter != 0)
+	{
+		average = (float)sum / counter;
+		printf_s("The class average is %.2f.", average);
+	}
+	else
+		printf_s("No grades were entered.");
+
+}
