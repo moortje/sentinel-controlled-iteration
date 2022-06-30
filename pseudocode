@@ -1,0 +1,10 @@
+set counter, grade and sum
+
+while grade does not equal -1
+  prompt for input
+  add grade to sum
+  add one to counter
+  
+set average as sum divided by counter
+
+calculate and display the average   
