@@ -5,6 +5,8 @@ while grade does not equal -1
   add grade to sum
   add one to counter
   
-set average as sum divided by counter
-
-calculate and display the average   
+if counter is not zero
+  set average as sum divided by counter
+  calculate and print the average   
+else
+  print "No grades were entered"
